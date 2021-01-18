@@ -1,18 +1,20 @@
 //use two pointers from end to front
 
 /*
-Given an array nums of size n, return the majority element.
+Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 
-The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+The number of elements initialized in nums1 and nums2 are m and n respectively. You may assume that nums1 has enough space (size that is equal to m + n) to hold additional elements from nums2.
+
+ 
 
 Example 1:
 
-Input: nums = [3,2,3]
-Output: 3
+Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Output: [1,2,2,3,5,6]
 Example 2:
 
-Input: nums = [2,2,1,1,1,2,2]
-Output: 2
+Input: nums1 = [1], m = 1, nums2 = [], n = 0
+Output: [1]
 */
 
 class Solution {
