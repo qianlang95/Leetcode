@@ -1,0 +1,24 @@
+//find min of exist array, res=1-min if positive
+/*
+Given an array of integers nums, you start with an initial positive value startValue.
+
+In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
+
+Return the minimum positive value of startValue such that the step by step sum is never less than 1.
+*/
+
+class Solution {
+    public int minStartValue(int[] nums) {
+        int min=Integer.MAX_VALUE;
+        int sum=0;
+        for (int i=0; i<nums.length; i++){
+            sum+=nums[i];
+            min=Math.min(min, sum);
+        }
+        if (1-min>=1){
+            return 1-min;
+        }else{
+            return 1;
+        }
+    }
+}
